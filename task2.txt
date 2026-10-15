@@ -1,0 +1,43 @@
+let name = prompt('Enter student name: ');
+let age = parseInt(prompt('Enter student age: '));
+let cgpa = parseFloat(prompt('Enter student CGPA: '));
+let status = prompt('Enter student status: ');
+let grade = prompt('Enter student grade: ');
+
+console.log('Student Information:');
+console.log('Name: '+name);
+console.log('Age: '+age);
+console.log('CGPA: '+cgpa);
+console.log('Grade: '+grade);
+
+let courses=['Web Technology','OOP','Database'];
+console.log('Course Names: ');
+for(let i=0; i<courses.length; i++){
+  console.log(courses[i]);
+}
+
+let marks=Number(prompt('Enter marks:'));
+if(marks>=80){
+  console.log('A+');
+}
+else if(marks>=70){
+  console.log('A');
+}
+else if(marks>=60){
+  console.log('B');
+}
+else{
+  console.log('F');
+}
+
+function showStudent(name,age){
+  console.log('Student Name: '+name);
+  console.log('Student Age: '+age);
+}
+showStudent(name,age);
+
+let students=[];
+for(let i=0; i<3; i++){
+  let studentName = prompt('Enter student name '+(i+1)+':');
+  students.push(studentName);
+}

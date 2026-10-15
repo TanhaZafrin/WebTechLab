@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Registration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Registration Form</h1>
+<form>
+
+<div>
+<label for='fullname'><b>Fullname:</b></label>
+<input type='text' name='fullname' id='fullname' required>
+</div><br>
+
+<div>
+<label for='password'><b>Password:</b></label>
+<input type='password' name='password' id='password'>
+</div><br>
+
+<div>
+<label for='dob'><b>Date of Birth:</b></label>
+<input type='date' name='dob' id='dob'>
+</div><br>
+
+<div>
+<label for='image'><b>Choose your photo:</b></label>
+<input type='file' name='image' id='image'>
+</div><br>
+
+<div>
+<label for='gender'><b>Gender:</b></label>
+<input type='radio' id='gender' value='male'>Male
+<input type='radio' id='gender' value='female'>Female
+</div><br>
+
+<div>
+<label for='religion'><b>Religion:</b></label>
+<input type='checkbox' name='r1' id='r1' value='islam'checked>Islam
+<input type='checkbox' name='r3' id='r3' value='hindu'>Hindu
+</div><br>
+
+<div>
+<label for='department'><b>Department</b></label>
+<select name ='department'>
+<option value='CSE'>CSE</option>
+<option value='EEE'selected>EEE</option>
+</select>
+</div><br>
+
+<div>
+<label for='address'><b>Address:</b></label>
+<textarea col='5' row='15'></textarea>
+</div><br>
+
+<div>
+<input type='submit'value='Register'>
+<input type='reset'value='Clear'>
+</div><br>
+
+</form>
+</body>
+</html>
