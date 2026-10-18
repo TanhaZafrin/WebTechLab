@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Registration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Library Membership Form</h1>
+<form>
+
+<div>
+<label for='fullname'><b>Name:</b></label>
+<input type='text' name='fullname' id='fullname' required>
+</div><br>
+
+<div>
+<label for='age'><b>Age:</b></label>
+<input type='Number' name='age' id='age'>
+</div><br>
+
+<div>
+<label for='email'><b>Email:</b></label>
+<input type='Email'id='email'>
+</div><br>
+
+<div>
+<label for='phone'><b>Phone:</b></label>
+<input type='Text' name='phone' id='phone'>
+</div><br>
+
+<div>
+<label for='membership'><b> Select Membership Plan:</b></label>
+<input type='radio' name="membership"  id='membership' value='Basic'>Basic
+<input type='radio' name="membership" id='membership' value='Silver'>Silver
+<input type='radio' name="membership" id='membership' value='Gold'>Gold
+</div><br>
+
+<div>
+<input type='submit'value='Register'>
+<input type='reset'value='Clear'>
+</div><br>
+
+</form>
+<hr>
+<div id="output"></div>
+<script src="script.js"></script>
+</body>
+</html>
