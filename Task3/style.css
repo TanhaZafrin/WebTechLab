@@ -1,0 +1,60 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: white;
+    justify-content: center;
+}
+
+h1 {
+    color: #000;
+    background-color: lightblue;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+}
+
+#display {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 28px;
+    padding: 15px;
+    border: none;
+    background-color: #eee;
+    text-align: right;
+    margin-bottom: 2px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    background: grey;
+    padding: 2px;
+}
+
+button {
+    font-size: 22px;
+    padding: 25px;
+    border: none;
+    background: #d9d9d9;
+    cursor: pointer;
+}
+
+button:active {
+    background: #bbb;
+}
+
+button.zero {
+    grid-column: span 2;
+}
+
+button.equals {
+    grid-row: span 2;
+}
